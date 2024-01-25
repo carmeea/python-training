@@ -9,6 +9,7 @@ product_A_units = 150
 product_A_price = 20
 product_B_units = 300
 product_B_price = 15
-total_revenue = (product_A_units * product_A_price) + (product_B_units * product_B_price)
+total_revenue = (product_A_units * product_A_price) + (
+    product_B_units * product_B_price
+)
 print(f"Total revenue last month was ${total_revenue}.")
-
