@@ -4,7 +4,7 @@ This is a full course that helps you have a better understanding of the entire p
 
 >All sessions have support materials, references and exercices as examples. Each session ends up with a homework exercices.
 
-Main focus of this course is on **Python Practice** :smile:
+Main focus of this course is on **Python Practice** :sunglasses:
 
 ### Tools and Libraries
 - Visual Studio Code 
