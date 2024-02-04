@@ -1,6 +1,6 @@
-'''
+"""
 Examples to be used 👍
-I add some Bonus challenge - here we can identify some good “pythonists “ 😂
+I add some Bonus challenge - here we can identify some good “pythonists“ 😂
 
 1. Open/Read Text Files (Using For Loop)
 Create a Python script that opens a text file and reads its contents line by line using a for loop. The script should print each line to the console. Include error handling to manage situations where the file might not exist.
@@ -17,5 +17,4 @@ Bonus Challenge: Enhance the script to compare the checksums of the original and
 4. Delete/Rename Files
 Write a Python program that lists all files in a given directory and allows the user to either delete a file or rename a file. The user should specify the action and the target file through input.
 Bonus Challenge: Extend the program to support batch renaming of multiple files following a specific pattern .
-
-'''
+"""
