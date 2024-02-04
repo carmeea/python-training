@@ -8,6 +8,13 @@ git fetch —all
 git branch -r #view remote branches
 git branch -a #view all remote and local branches
 ```
+How to create a local branch from main and push to remote
+```bash
+git checkout main
+git checkout -b local-branch-name
+git push -u origin local-branch-name
+```
+
 How to create a local branch from a remote branch
 ```bash
 git fetch origin <remote-branch> 
