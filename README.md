@@ -6,6 +6,9 @@ This is a full course that helps you have a better understanding of the entire p
 
 Main focus of this course is on **Python Practice** :sunglasses:
 
+![ZeroHero](/Assets/zero-hero.jpg)
+
+
 ### Tools and Libraries
 - Visual Studio Code 
 - Virtual Box / UTM depending on your OS. For more details read 
