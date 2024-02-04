@@ -6,7 +6,7 @@ This is a full course that helps you have a better understanding of the entire p
 
 Main focus of this course is on **Python Practice** :sunglasses:
 
-![ZeroHero](/Assets/zero-hero.jpg)
+![ZeroHero](/Assets/zero-hero.jpeg)
 
 
 ### Tools and Libraries

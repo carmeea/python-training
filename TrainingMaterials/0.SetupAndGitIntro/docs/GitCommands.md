@@ -13,6 +13,7 @@ How to create a local branch from main and push to remote
 git checkout main
 git checkout -b local-branch-name
 git push -u origin local-branch-name
+git push --set-upstream origin # or push the current branch and set the remote as upstream
 ```
 
 How to create a local branch from a remote branch
