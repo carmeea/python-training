@@ -1,4 +1,4 @@
-## Working with Git
+## Git Basic Commands
 
 ### HowTos in Git
 
@@ -17,8 +17,9 @@ git checkout -b local-branch-name --track origin/[remote-branch-name] #using a d
 
 How to rebase your branch against master
 ```bash
+git checkout local-branch-name #if you are not already on it
 git fetch origin
-git remase origin/master
+git rebase origin/main
 ```
 
 How to delete local and remote branches
