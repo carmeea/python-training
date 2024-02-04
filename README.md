@@ -8,22 +8,25 @@ Main focus of this course is on **Python Practice** :sunglasses:
 
 ### Tools and Libraries
 - Visual Studio Code 
-- Virtual Box or UTM depending on your OS. Please read prerequisits document for more details
+- Virtual Box / UTM depending on your OS. For more details read 
+[prerequisits](TrainingMaterials/0.SetupAndGitIntro/docs/EnvironmentSetup.md) document.
+
 - Ubuntu 22.04 image
 - Python 3.10 (comes pre-installed with ubuntu 22.04)
-- Virtualenv - to create a virtual environment for python
-- Black Formatter - to format python files
+- Virtualenv - to create isolated python environment
+- Black Formatter - PEP8 compliant to reformat python files
+- Git - for source code management
 
 ### What you will learn in this course
 1. To setup a virtual machine with VirtualBox/UTM using ubuntu image
-2. Install and setup VS Code on Ubuntu VM
+2. Install and setup Visual Studio Code on Ubuntu VM
 3. Generate ssh-key and connect to github
-4. Setup Python Environment for VS Code. 
+4. Setup Python Environment for Visual Studio Code. 
 5. Creating a virtual environment
-6. Format files using Black
+6. Format files using Black formatter
 7. Working with Git basic commands
-- basic git commands
-- working with local branches
-- commits to github
-- creating a pull request & merge
-8. Python programming introduction
+   - basic git commands
+   - work with remote and local branches
+   - push code to github
+   - create a pull request & merge
+8. Python programming language introduction

@@ -54,7 +54,7 @@ code .
 ```
 
 ### Python Installation
-- ubuntu comes with python 3.10.12 preinstalled. To check version:
+- Ubuntu 22.04 comes preinstalled with python 3.10.12. To check version:
 ```bash
 python3 --version
 ```
@@ -83,7 +83,39 @@ pip --version
 ```
 
 ### Creating a Virtual Environment
+Virtualenv helps you create an isolated python environment where you can install and manage project whitout polluting your OS environment.
+
+Use commands bellow to install, create, activate and deactivate the virtual environment.
+```bash
+sudo pip install virtualenv
+virtualenv venv
+source venv/bin/activate
+deactivate
+```
 
 ### Installing Black Formatter
+Black is a [PEP8](https://peps.python.org/pep-0008/) compliant opinionated formatter. Black reformats entire files in place. PEP8 improves the readability and consistency of Python code. PEP stands for Python Enhancement Proposal.
+
+To install black use command.
+```bash
+pip install black
+```
+To format file, you can use one of the folowing commands.
+```bash
+black {source_file_or_directory}
+python -m black {source_file_or_directory}
+```
+You can also install Black formatter extension and set it up as default formatter in VS Code.
 
 ### VS Code Setup
+
+First time you work with python files in VS Code, you need to configure default setting (select the language interpreter, default formatter, etc).
+
+Setup python interpretor - Simple way to Configure Python default settings.
+   > File > Preferences  > Settings -> search python interpretor
+  
+Black formatter extension - One way to configure black would be:
+   > Modify a python file > Right-click menu > Format document with > Configure default formatter > Select Black formater
+
+Format file when saving changes
+   > File > Preference > Settings > Text Editor > Check Format on Save (Restart VSCode)
