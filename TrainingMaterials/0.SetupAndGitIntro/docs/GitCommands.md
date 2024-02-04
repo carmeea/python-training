@@ -1,6 +1,6 @@
 ## Working with Git
 
-### HowTos Git
+### HowTos in Git
 
 How to view all remote and local branches
 ```bash
