@@ -1,4 +1,6 @@
-## Git Basic Commands
+## Git Introduction
+
+### Git Basic Commands
 
 ### HowTos in Git
 
