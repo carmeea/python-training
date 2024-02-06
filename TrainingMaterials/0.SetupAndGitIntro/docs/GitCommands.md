@@ -1,6 +1,11 @@
 ## Git Introduction
 Git is a DevOps tool used for source code management. It is a free and open-source version control system used to handle small to very large projects efficiently. Git is used to track changes in the source code, enabling multiple developers to work together on non-linear development.
 
+Git Useful Links
+- [Git Tutorial: 10 Common Git Problems and How to Fix Them](https://www.codementor.io/@citizen428/git-tutorial-10-common-git-problems-and-how-to-fix-them-aajv0katd)
+- [Common mistakes](https://ohshitgit.com/)
+- [Sandbox GIT](https://learngitbranching.js.org/)
+
 ## Git Workflow
 ![GitWorflow](/Assets/gitworkflow.jpg)
 
