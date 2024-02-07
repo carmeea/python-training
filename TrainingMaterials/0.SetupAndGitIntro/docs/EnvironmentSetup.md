@@ -1,4 +1,4 @@
-## Git Introduction & Setup Python Environment
+## Setup Ubuntu VM & Python Environment
 
 ### Environment Prerequisits
 1. Install Virtual Box - Download [here](https://www.virtualbox.org/wiki/Downloads)
