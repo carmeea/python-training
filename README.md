@@ -1,4 +1,4 @@
-## Full Course Using Python - Introduction
+### Full Course Using Python - Introduction
 
 This is a full course that helps you to have a better understanding of the entire process of working with python and git, starting from scrach. 
 
