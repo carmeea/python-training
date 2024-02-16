@@ -10,3 +10,5 @@ Use exchange rates:
     1 USD = 4,57 RON
 Convert 100 RON to both each currency and print the results, rounded to two decimal places.
 """
+
+#firsttest
