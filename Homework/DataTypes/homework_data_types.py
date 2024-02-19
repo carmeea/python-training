@@ -66,3 +66,5 @@ devices.append("Tablet")
 print("updated inventory is:")
 for device in devices:
     print(device)
+
+print(f"The list is:{devices}")
