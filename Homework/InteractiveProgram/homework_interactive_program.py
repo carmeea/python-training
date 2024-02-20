@@ -11,26 +11,44 @@ Use exchange rates:
 Convert 100 RON to both each currency and print the results, rounded to two decimal places.
 """
 
+currency = {
+    "Lev": 2.55,
+    "NOK": 0.43,
+    "Forint": 0.013,
+    "Euro": 4.98,
+    "USD": 4.57
+}
+print("100 de RON convertiti in:")
+for i in currency:
+    print(f"{i} = {100 / currency[i]:.2f}")
 
-class rates:
-    def __init__(self, currency, value):
-        self.currency = currency
-        self.value = value
 
-c1 = rates("Lev", 2.55)
-c2 = rates("NOK", 0.43)
-c3 = rates("Forint", 0.013)
-c4 = rates("Euro", 4.98)
-c5 = rates("USD", 4.57)
 
-choice = input("let me know to which currency you wish to convert, options are: LEV, NOK, Forint, Euro, USD")
-while choice in rates.currency:
-    amount = input(f"give me an ammount to change form RON to {choice}"
-else:
-    print("you have to choose again, please pick a currency from the mentioned ones")
+# class rates:
+#     def __init__(self, currency, value):
+#         self.currency = currency
+#         self.value = value
 
-        def converter(self):
-        print(f"The RON amount given {amount} can be converted to {} {choice}")
+#     def converter(self, amount):
+#         convertedAmount = amount / self.value
+#         return convertedAmount
+
+# c1 = rates("Lev", 2.55)
+# c2 = rates("NOK", 0.43)
+# c3 = rates("Forint", 0.013)
+# c4 = rates("Euro", 4.98)
+# c5 = rates("USD", 4.57)
+
+# choice = input("let me know to which currency you wish to convert, options are: LEV, NOK, Forint, Euro, USD")
+# valid = [c.currency.upper() for c in [c1, c2, c3, c4, c5]]
+
+# while choice not in valid:
+#     print("you have to choose again, please pick a currency from the mentioned ones")
+    
+# amount = input(f"give me an ammount to change form RON to {choice}"
+
+    
+
         
 
-amount = input("give me an amount for conversion")
+# amount = input("give me an amount for conversion")
