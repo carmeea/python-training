@@ -11,17 +11,10 @@ Use exchange rates:
 Convert 100 RON to both each currency and print the results, rounded to two decimal places.
 """
 
-currency = {
-    "Lev": 2.55,
-    "NOK": 0.43,
-    "Forint": 0.013,
-    "Euro": 4.98,
-    "USD": 4.57
-}
+currency = {"Lev": 2.55, "NOK": 0.43, "Forint": 0.013, "Euro": 4.98, "USD": 4.57}
 print("100 de RON convertiti in:")
 for i in currency:
     print(f"{i} = {100 / currency[i]:.2f}")
-
 
 
 # class rates:
@@ -44,11 +37,8 @@ for i in currency:
 
 # while choice not in valid:
 #     print("you have to choose again, please pick a currency from the mentioned ones")
-    
+
 # amount = input(f"give me an ammount to change form RON to {choice}"
 
-    
-
-        
 
 # amount = input("give me an amount for conversion")

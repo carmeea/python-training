@@ -5,6 +5,7 @@ a. Calculate the total sales for the quarter.
 b. Calculate the average sales per month.
 c. Print both the total and the average, formatted to two decimal places.
 """
+
 sales = [120, 150, 170, 100]
 total_sales = 0
 average_sales = 0
@@ -24,9 +25,7 @@ b. Add a new field 'email' with the value 'alice.finance@example.com'.
 c. Print the dictionary.
 """
 employeeName = input("Please enter an employee name:")
-employeeDict = {
-    "name": employeeName
-}
+employeeDict = {"name": employeeName}
 employeeDict["email"] = "alice.finance@example.com"
 print(employeeDict)
 
@@ -41,7 +40,9 @@ conferenceRooms = ("Aspen", "Birch", "Cedar")
 print("Please give me the number of the room you wish to book, given the following:")
 
 for i in conferenceRooms:
-    print(f"number {conferenceRooms.index(i)+1} corresponds to room the following conference room: {i}")
+    print(
+        f"number {conferenceRooms.index(i)+1} corresponds to room the following conference room: {i}"
+    )
 
 bookedRoom = input("Guest input: ")
 
@@ -49,7 +50,9 @@ while bookedRoom not in ["1", "2", "3"]:
     print("Error! Wrong conference room number, please try again!")
     bookedRoom = input("Guest input: ")
 
-print(f"You selected room number {bookedRoom}, named {conferenceRooms[int(bookedRoom)-1]}")
+print(
+    f"You selected room number {bookedRoom}, named {conferenceRooms[int(bookedRoom)-1]}"
+)
 
 
 """
