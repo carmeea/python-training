@@ -54,13 +54,13 @@ b. Update the list and print the updated inventory.
 c. Print the list
 """
 
-#meethod 1
+#method 1
 products = ["Laptop", "Phone", "Printer", "Headset", "Monitor"]
 products.remove("Printer")
 products.insert(2, "Tablet")
 print(products)
 
-#metthodd 2
+#method 2
 products = ["Laptop", "Phone", "Printer", "Headset", "Monitor"]
 i = 0
 while i < len(products):
