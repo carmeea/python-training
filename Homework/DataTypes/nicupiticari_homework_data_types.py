@@ -36,7 +36,7 @@ conferenceRoom = ("Aspen", "Birch", "Cedar")
 print(conferenceRoom)
 value = int(input("Choose a room to book: "))
 if value in [1, 2, 3]:
-    room = conferenceRoom[value-1]  #listele incep de la 0 nu de la 1, de asta e chosen-1
+    room = conferenceRoom[value-1]  #listele incep de la 0 nu de la 1, de asta e value-1
     print("You booked the "+room+" room.")
 else:
     print("Please enter 1, 2 or 3")
@@ -52,5 +52,4 @@ i=len(list)
 list.remove("Printer")
 list.insert(i-1,"Tablet")
 print(list)
-
 
