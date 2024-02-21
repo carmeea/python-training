@@ -1,0 +1,37 @@
+"""
+Multi-Currency Converter
+Write a function that converts an amount from RON to NOK (Norwegian Kroner), to BGN (Bulgarian Lev),
+to HUN (Hungarian Forint), to EUR (Euro), and to USD (Us Dollars).
+Use exchange rates:
+    1 Lev = 2.55 RON
+    1 NOK = 0.43 RON
+    1 Forint = 0.013 RON
+    1 Euro = 4,98 RON
+    1 USD = 4,57 RON
+Convert 100 RON to both each currency and print the results, rounded to two decimal places.
+"""
+amount_in_ron=100
+exchange_rates = {
+    "BGN" : 2.55,
+    "NOK" : 0.43,
+    "Forint" : 0.013,
+    "EUR" : 4.98,
+    "USD" : 4.57
+}
+
+amount_in_nok = amount_in_ron * exchange_rates["NOK"]  
+amount_in_bgn = amount_in_ron * exchange_rates['BGN']
+amount_in_forint = amount_in_ron * exchange_rates['Forint']
+amount_in_eur = amount_in_ron * exchange_rates['EUR']
+amount_in_usd = amount_in_ron * exchange_rates['USD']
+
+print(round(amount_in_nok,2))
+print(round(amount_in_bgn,2))
+print(round(amount_in_forint,2))
+print(round(amount_in_eur,2))
+print(round(amount_in_usd,2))
+print(round(123.2))
+
+
+
+    
