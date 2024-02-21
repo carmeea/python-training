@@ -1,0 +1,9 @@
+{
+    "rates": [
+        {"currency": "Lev", "value": 2.55},
+        {"currency": "NOK", "value": 0.43},
+        {"currency": "Forint", "value": 0.013},
+        {"currency": "Euro", "value": 4.98},
+        {"currency": "USD", "value": 4.57}
+    ]
+}
