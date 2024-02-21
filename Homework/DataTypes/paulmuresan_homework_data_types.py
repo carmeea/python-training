@@ -44,7 +44,7 @@ conferenceRoom=('Aspen', 'Birch', 'Cedar')
 #a
 print(conferenceRoom)
 #b
-room=input("Type the number of the room you want to book(1-3):")
+room=input("Type the number of the room you want to book(0,1,2):")
 #c
 print("You selected room ", conferenceRoom[int(room)])
 
