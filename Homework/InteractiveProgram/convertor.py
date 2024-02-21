@@ -33,11 +33,10 @@ for i in j["value"]:
 =======
 print("Our current rates are:")
 for i in j["rates"]:
->>>>>>> eff4ce9 (update convertor)
-    print(i)
+    print(f"1 {i['currency']} = {i['value']} RON")
 
-amount = input("What is the RON amount that you wish to exchange?")
-valuta = input("What is the currency you wish to exchange to?")
+amount = input("What is the RON amount that you wish to exchange?\n")
+valuta = input("What is the currency you wish to exchange to?\n")
 
 <<<<<<< HEAD
 # amount = input("what is the RON amount that you wish to exchange")
