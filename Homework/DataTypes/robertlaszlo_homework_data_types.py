@@ -54,5 +54,6 @@ c. Print the list
 
 products = ["Laptop", "Phone", "Printer", "Headset", "Monitor"]
 products.remove("Printer")
+print(products)
 products.append("Tablet")
 print(products)
