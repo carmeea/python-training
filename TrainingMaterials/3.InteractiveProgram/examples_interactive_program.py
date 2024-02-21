@@ -17,10 +17,9 @@ print("Respect, ", end="")
 print("Strive for excellence.")
 
 # Calculate the exchange rate from RON to EUR
-amount_ron = input("Amount in RON: ")
+amount_ron = float(input("Amount in RON: "))
 exchange_rate = 4.98
-amount_eur = (
-    float(amount_ron) / exchange_rate
-)  # let the error be raised to find a solution
+amount_eur = amount_ron/ exchange_rate
+  # let the error be raised to find a solution
 print(amount_eur)  # too many decimals
 print(round(amount_eur, 2))
