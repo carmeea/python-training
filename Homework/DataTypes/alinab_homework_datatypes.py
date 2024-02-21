@@ -38,10 +38,10 @@ c. Print a confirmation message including the name of the booked room.
 """
 conference_room = ("Aspen", "Birch", "Cedar")
 print(conference_room)
-choosen = int(input("choose a room to book: "))
-if choosen in [1, 2, 3]:
+chosen = int(input("choose a room to book: "))
+if chosen in [1, 2, 3]:
     room = conference_room[choosen-1]
-    print(f"you book the {room} room")
+    print(f"You booked the {room} room")
 else:
     print("Please enter 1, 2 or 3")
 
