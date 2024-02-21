@@ -34,8 +34,8 @@ amount_forint = (
 amount_usd = (
     float(amount_ron) / exchange_rate_usd
 )
-print("Exchanged amount in Euro: ", round(amount_eur, 2))
-print("Exchanged amount in Leva: ", round(amount_lev, 2))
-print("Exchanged amount in Norvegian Korona: ", round(amount_nok, 2))
-print("Exchanged amount in Forint: ", round(amount_forint, 2))
-print("Exchanged amount in USD: ", round(amount_usd, 2))
+print("Exchanged amount in Euro: ", "{:.2f}".format(amount_eur))
+print("Exchanged amount in Leva: ", "{:.2f}".format(amount_lev))
+print("Exchanged amount in Norvegian Korona: ", "{:.2f}".format(amount_nok))
+print("Exchanged amount in Forint: ", "{:.2f}".format(amount_forint))
+print("Exchanged amount in USD: ", "{:.2f}".format(amount_usd))
