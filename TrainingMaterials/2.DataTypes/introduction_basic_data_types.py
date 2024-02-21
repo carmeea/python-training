@@ -10,7 +10,7 @@ REFERENCE https://www.w3schools.com/python/python_datatypes.asp
 # Numbers with no decimals like -5, -3, 0, 1, 2, etc.
 userAge = 20
 mobileNumber = 123456789
-print("User age:", userAge, "Mobile numer:", mobileNumber)
+print("User Age:", userAge, mobileNumber)
 
 # FLOAT
 # Numbers with decimal parts like  1.234, -0.023, 12.01
