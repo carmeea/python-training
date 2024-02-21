@@ -30,7 +30,7 @@ amount_forint = float(amount_ron)*forint
 amount_euro = float(amount_ron)*euro
 amount_usd = float(amount_ron)*usd
 
-print("%s Ron = \n%s lev \n%s nok \n%s forint \n%s euro \n%s usd" %(amount_ron, round(amount_lev,{:.2f}),round(amount_nok,{:.2f}), round(amount_forint,{:.2f}),round(amount_euro,{:.2f}),round(amount_usd,{:.2f})))
+print("%s Ron = \n%s lev \n%s nok \n%s forint \n%s euro \n%s usd" %(amount_ron, round(amount_lev,2),round(amount_nok,2), round(amount_forint,2),round(amount_euro,2),round(amount_usd,2)))
 
 
 
