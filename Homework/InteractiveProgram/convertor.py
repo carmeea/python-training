@@ -9,7 +9,7 @@ for i in j["rates"]:
 
 amount = input("What is the RON amount that you wish to exchange?\n")
 
-while int(amount) <= 0:
+while not(amount.isnumeric() and int(amount) > 0):
     print("The amount specified is not valid!")
     amount = input("Give us another amount that you would like to exchange\n")
 else:    
@@ -24,6 +24,6 @@ else:
             break
 
     if not found:
-        print("We can't exchange to the selected currency.")
+        print("We can't exchange to the selected currency. Good day!")
 
 f.close()
