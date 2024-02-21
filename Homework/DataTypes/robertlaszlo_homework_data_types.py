@@ -7,11 +7,12 @@ b. Calculate the average sales per month.
 c. Print both the total and the average, formatted to two decimal places.
 """
 quarter_sales = [120, 150, 170, 100]
-total_sales_for_quarter = "{:.2f}".format(quarter_sales[0] + quarter_sales[1] + quarter_sales[2] + quarter_sales[3])
-average_sales_for_the_quarter = "{:.2f}".format(total_sales_for_quarter / 4)
+total_sales_for_quarter = sum(quarter_sales)
+total_sales_period = len(quarter_sales)
+average_sales_for_the_quarter = (total_sales_for_quarter / total_sales_period)
 
-print(f"Total sales for the quarter is: {total_sales_for_quarter}")
-print(f"Average sales for the quarter is: {average_sales_for_the_quarter}")
+print(f"Total sales for the quarter is: {total_sales_for_quarter:.2f}")
+print(f"Average sales for the quarter is: {average_sales_for_the_quarter:.2f}")
 
 """
 Read from input a string with your name.
