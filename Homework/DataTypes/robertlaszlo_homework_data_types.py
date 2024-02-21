@@ -7,8 +7,8 @@ b. Calculate the average sales per month.
 c. Print both the total and the average, formatted to two decimal places.
 """
 quarter_sales = [120, 150, 170, 100]
-total_sales_for_quarter = quarter_sales[0] + quarter_sales[1] + quarter_sales[2] + quarter_sales[3]
-average_sales_for_the_quarter = total_sales_for_quarter / 4
+total_sales_for_quarter = "{:.2f}".format(quarter_sales[0] + quarter_sales[1] + quarter_sales[2] + quarter_sales[3])
+average_sales_for_the_quarter = "{:.2f}".format(total_sales_for_quarter / 4)
 
 print(f"Total sales for the quarter is: {total_sales_for_quarter}")
 print(f"Average sales for the quarter is: {average_sales_for_the_quarter}")
