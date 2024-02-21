@@ -5,7 +5,7 @@ j = json.load(f)
 
 print("Our current rates are:")
 for i in j["rates"]:
-    print(i)
+    print(f"1 {i["currency"]} = {i["value"]} RON")
 
 amount = input("What is the RON amount that you wish to exchange?")
 valuta = input("What is the currency you wish to exchange to?")
