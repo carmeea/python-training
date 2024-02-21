@@ -7,19 +7,19 @@ b. Calculate the average sales per month.
 c. Print both the total and the average, formatted to two decimal places.
 """
 sales = [120, 150, 170, 100]
-
+per_month = len(sales)
 quarter_total_sales = sales[0] + sales[1] + sales[2] + sales[3]
-quarter_average_sales = int(quarter_total_sales) / int(4)
+quarter_average_sales = int(quarter_total_sales) / int(per_month)
 print(f"Total sales for the quarter is: {quarter_total_sales}")
 print(f"Average sales for the quarter is: {quarter_average_sales}")
 # OR
 quarter_total_sales2 = sum(sales)
-quarter_average_sales2 = quarter_total_sales2 / int(4)
+quarter_average_sales2 = quarter_total_sales2 / int(per_month)
 print(f"Total sales for the quarter is: {quarter_total_sales2}")
 print(f"Average sales for the quarter is: {quarter_average_sales2}")
 # OR
 quarter_total_sales3 = sum(int(i) for i in sales)
-quarter_average_sales3 = quarter_total_sales3 / 4
+quarter_average_sales3 = quarter_total_sales3 / per_month
 print(f"Total sales for the quarter is: {quarter_total_sales3}")
 print(f"Average sales for the quarter is: {quarter_average_sales3}")
 
