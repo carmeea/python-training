@@ -1,4 +1,3 @@
-
 """
 Sales Report Processing
 You are given the data for quarter sales: sales = [120, 150, 170, 100].
@@ -6,6 +5,7 @@ a. Calculate the total sales for the quarter.
 b. Calculate the average sales per month.
 c. Print both the total and the average, formatted to two decimal places.
 """
+
 sales = [120, 150, 170, 100]
 per_month = len(sales)
 quarter_total_sales = sales[0] + sales[1] + sales[2] + sales[3]
@@ -49,7 +49,9 @@ c. Print a confirmation message including the name of the booked room.
 """
 conference_rooms = ("Aspen", "Birch", "Cedar")
 print("Available conference rooms: ", conference_rooms)
-conference_room_number = input("Please enter 0 for Aspen, 1 for Birch or 2 for Cedar, to book your desired room: ")
+conference_room_number = input(
+    "Please enter 0 for Aspen, 1 for Birch or 2 for Cedar, to book your desired room: "
+)
 print("You have booked ", conference_rooms[int(conference_room_number)])
 # OR
 # print("Please enter 0 for Aspen, 1 for Birch or 2 for Cedar, to book your desired room")
@@ -63,11 +65,11 @@ b. Update the list and print the updated inventory.
 c. Print the list
 """
 
-products = ['Laptop', 'Phone', 'Printer', 'Headset', 'Monitor']
+products = ["Laptop", "Phone", "Printer", "Headset", "Monitor"]
 # products.remove('Printer')
 # OR
 products.pop(2)
 print(products)
 # products.append('Tablet')
-products.insert(2, 'Tablet')
+products.insert(2, "Tablet")
 print(products)
