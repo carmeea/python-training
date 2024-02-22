@@ -19,7 +19,8 @@ b. Add a new field 'email' with the value 'alice.finance@example.com'.
 c. Print the dictionary.
 """
 name = input ("Write your name: ")
-employee = {"name" : name, "department" : ""}
+department = "HR"
+employee = {"name" : name, "department" : department}
 employee["email"] = "alice.finance@example.com"
 print(employee)
 """
