@@ -16,33 +16,35 @@ Convert 100 RON to both each currency and print the results, rounded to two deci
 amount_ron = 100
 print("RON amount to the be exchanged: ", amount_ron)
 
-exchange_rate_nok = 0.43
-exchange_rate_bgn = 2.55
-exchange_rate_hun = 0.013
-exchange_rate_eur = 4.98
-exchange_rate_usd = 4.57
+# exchange_rate_nok = 0.43
+# exchange_rate_bgn = 2.55
+# exchange_rate_hun = 0.013
+# exchange_rate_eur = 4.98
+# exchange_rate_usd = 4.57
+
+exchange_rates = {"exchange_rate_nok": 0.43, "exchange_rate_bgn": 2.55, "exchange_rate_hun": 0.013, "exchange_rate_eur": 4.98, "exchange_rate_usd": 4.57}
 
 amount_nok = (
-    int(amount_ron) / float(exchange_rate_nok)
+    int(amount_ron) / float(exchange_rates["exchange_rate_nok"])
 )
 print("Amount in Norvegian Kroner is:", round(amount_nok, 2))
 
 amount_bgn = (
-    int(amount_ron) / float(exchange_rate_bgn)
+    int(amount_ron) / float(exchange_rates["exchange_rate_bgn"])
 )
 print("Amount in Bulgarian Lev is:", round(amount_bgn, 2))
 
 amount_hun = (
-    int(amount_ron) / float(exchange_rate_hun)
+    int(amount_ron) / float(exchange_rates["exchange_rate_hun"])
 )
 print("Amount in Hungarian Forint is:", round(amount_hun, 2))
 
 amount_eur = (
-    int(amount_ron) / float(exchange_rate_eur)
+    int(amount_ron) / float(exchange_rates["exchange_rate_eur"])
 )
 print("Amount in Euro is:", round(amount_eur, 2))
 
 amount_usd = (
-    int(amount_ron) / float(exchange_rate_usd)
+    int(amount_ron) / float(exchange_rates["exchange_rate_usd"])
     )
 print("Amount in US dolars is:", round(amount_usd, 2))
