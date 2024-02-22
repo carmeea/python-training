@@ -22,7 +22,7 @@ def convert_ron(amount_ron):
     }
   
   for currency, rate in exchange_rates.items():
-    converted_amount = amount_ron * rate
+    converted_amount = amount_ron / rate
     print(f"{amount_ron} RON is equal to {converted_amount:.2f} {currency}")
 
 convert_ron(100)
