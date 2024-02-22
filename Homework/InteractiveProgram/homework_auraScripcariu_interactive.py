@@ -16,12 +16,6 @@ Convert 100 RON to both each currency and print the results, rounded to two deci
 amount_ron = 100
 print("RON amount to the be exchanged: ", amount_ron)
 
-# exchange_rate_nok = 0.43
-# exchange_rate_bgn = 2.55
-# exchange_rate_hun = 0.013
-# exchange_rate_eur = 4.98
-# exchange_rate_usd = 4.57
-
 exchange_rates = {"exchange_rate_nok": 0.43, "exchange_rate_bgn": 2.55, "exchange_rate_hun": 0.013, "exchange_rate_eur": 4.98, "exchange_rate_usd": 4.57}
 
 amount_nok = (
