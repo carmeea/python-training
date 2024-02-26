@@ -10,39 +10,64 @@ Catch any errors from user's input.
 Hint: use methods range(), input(), try-except
 """
 
-#1
-results = []
-for i in range(1500, 2700, 5):
-    if i % 7 == 0:
-        results.append(i)
+# #1
+# results = []
+# for i in range(1500, 2700, 5):
+#     if i % 7 == 0:
+#         results.append(i)
 
-print(results)
+# print(results)
 
-user_input = input("give me an integer to check wether it is in the results list\n")
+# user_input = input("give me an integer to check wether it is in the results list\n")
+
+# try:
+#     if int(user_input) in results:
+#         print("Number given is in the result list")
+#     else:
+#         print("number not in list")
+# except ValueError:
+#     print("Invalid input. Please try again")
+
+# #2.1
+# user_word = input("give me an english word for printing it out in reverse\n")
+# letters_list=list(user_word)
+# #print(letters_list)
+# reversed_word = ""
+
+# try:
+#     if user_word.isalpha():
+#        letters_list.reverse()
+#        #print(letters_list)
+#        for i in range(len(user_word)):
+#            reversed_word = reversed_word + letters_list[i]
+#        print(reversed_word)
+#     else:
+#         print("given input is not a word in english")
+# except ValueError:
+#     print("Invalid input.Please try again")
+
+#2.2
+# user_term = input("give me a word for reverse printing\n")
+
+# try:
+#     if user_term.isalpha():
+#         print(user_term[::-1])
+#     else:
+#         print("given input is not a word")
+# except TypeError:
+#     print("Invalid input.Please try again\n")
+
+
+#2.3
+user_in = input("give me a word for printing in reverse\n")
+reword = ""
 
 try:
-    if int(user_input) in results:
-        print("Number given is in the result list")
+    if user_in.isalpha():
+        for i in range(len(user_in)-1,-1,-1):
+            reword += user_in[i]
+        print(reword)
     else:
-        print("number not in list")
-except ValueError:
-    print("Invalid input. Please try again")
-
-#2.1
-user_word = input("give me an english word for printing it out in reverse\n")
-letters_list=list(user_word)
-#print(letters_list)
-reversed_word = ""
-
-try:
-    if user_word.isalpha():
-       letters_list.reverse()
-       #print(letters_list)
-       for i in range(len(user_word)):
-           reversed_word = reversed_word + letters_list[i]
-       print(reversed_word)
-    else:
-        print("given input is not a word in english")
-except ValueError:
-    print["Invalid input.Please try again"]
-        
+         print("given input is not a word")
+except TypeError:
+    print("Invalid input.Please try again\n")
