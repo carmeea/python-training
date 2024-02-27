@@ -62,7 +62,7 @@ for x in books:
     print(x)
 
 # range() function
-for x in range(2, 7, 3):
+for x in range(2, 7, -1):
     print(x)
 else:
     print("We are done")  # else in for? :O
