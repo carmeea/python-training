@@ -1,4 +1,4 @@
-#tema
+# tema
 """
 Sales Report Processing
 You are given the data for quarter sales: sales = [120, 150, 170, 100].
@@ -9,7 +9,7 @@ c. Print both the total and the average, formatted to two decimal places.
 quarter_sales = [120, 150, 170, 100]
 total_sales_for_quarter = sum(quarter_sales)
 total_sales_period = len(quarter_sales)
-average_sales_for_the_quarter = (total_sales_for_quarter / total_sales_period)
+average_sales_for_the_quarter = total_sales_for_quarter / total_sales_period
 
 print(f"Total sales for the quarter is: {total_sales_for_quarter:.2f}")
 print(f"Average sales for the quarter is: {average_sales_for_the_quarter:.2f}")
