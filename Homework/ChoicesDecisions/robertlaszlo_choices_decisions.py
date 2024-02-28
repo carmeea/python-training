@@ -15,7 +15,7 @@ try:
     input_number = int(input)
     if input_number in numbers:
         print("Number is divisible by 7 and is a multiple of 5")
-    elif input <= 1500 or input >= 2700:
+    elif input < 1500 or input > 2700:
         print("Number is outside of the range!")
     else:
         print("Not dividable by 7 and is a multiple of 5")
