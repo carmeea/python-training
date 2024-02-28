@@ -1,0 +1,34 @@
+#1.
+
+x=[]
+
+for i in range(1500,2700):
+    if i%7==0 and i%5==0:
+        x.append(i)
+
+print(x)
+
+    print("Not accepted")
+y=int(input()
+
+if y in x:
+    print('Accepted')
+else:
+    print('Not accepted')
+
+
+#2cepted')
+
+
+#2
+    
+
+
+
+try:
+    word=input()
+    txt=word[::-1]
+    print(txt)
+except Exception as e:
+    print("An error occurred!",e)
+
