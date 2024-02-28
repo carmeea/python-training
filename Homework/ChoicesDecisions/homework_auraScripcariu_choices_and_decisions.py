@@ -5,6 +5,7 @@ Then accept a number from the user and verify if it is part of the found list nu
 Hint: use methods range(), input(), append(), try-except
 """
 
+"""
 all_numbers = []
 
 for number in range(1500, 2701):
@@ -37,25 +38,27 @@ for number in all_numbers:
     else:
         break
 
-
+"""
 """
 2. Write a program that accepts a word from the user and print it in reverse.  
 Catch any errors from user's input.
 Hint: use methods range(), input(), try-except
 """
-user_word = input("Please insert a word: ")
-word_type = isinstance(user_word, (int, float))
 
-if not user_word:
-    print("Input should not be empty!")
-elif word_type == True:
-    print("The word should not be a number!")
-elif " " in user_word:
-    print("Only 1 word without spaces is allowed!")
-
-word_length = len(user_word)
-try:
-    for i in range(word_length - 1, -1, -1):
-        print(user_word[i], end="")
-except Exception as e:
-    print("Unknown error: ", e)
+while True:
+    try:
+        user_word = input("Please insert a word: ")
+        int(user_word)
+        print("Ooops! Not a word, try again")
+    except ValueError:
+        print("This is a word!Let's see if is valid to reverse ... ")
+        if not user_word:
+            print("oops! Input should not be empty! Try again")
+            continue
+        elif " " in user_word:
+            print("Ooops! Only 1 word without spaces is allowed! Try again")
+            continue
+        else:
+            for i in range(len(user_word) - 1, -1, -1):
+                print(user_word[i], end="")
+            break
