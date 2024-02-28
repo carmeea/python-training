@@ -26,3 +26,18 @@ amount_eur=float(amount_ron)*eur
 amount_usd=float(amount_ron)*usd
 
 print("%s Ron = \n%s lev \n%s nok \n%s forint \n%s eur \n%s usd" % (amount_ron, round(amount_lev,2),round(amount_nok,2),round(amount_forint,2),round(amount_eur,2),round(amount_usd,2)))
+
+
+#not working
+currency = dict(lev=2.55, nok=0.43, forint=0.013, eur=4.98, usd=4.57)
+print(currency)
+exchange=currency
+amount_ron = input("Enter the ammount in RON: ")
+#exchange=currency.values()*amount_ron
+print(amount_ron," Ron =")
+
+for x in len(currency):
+    exchange.keys[x] = float(amount_ron)*currency.values[x]
+print(exchange)
+
+print(currency.keys[x], "\n")
