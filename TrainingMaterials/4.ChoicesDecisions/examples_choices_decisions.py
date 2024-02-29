@@ -1,12 +1,14 @@
 # Choices Decisions Examples
 # Logical conditions in Python
 
+"""
 a == b  # equals
 a != b  # not equals
 a < b  # less than
 a <= b  # less than or equal to
 a > b  # greater than
 a >= b  # greater then or equal to
+"""
 
 # If statements
 
@@ -88,7 +90,7 @@ while i < 6:
 
 try:
     print(x)
-except TheError:
+except Exception:
     print("The variable x is not defined")
 else:
     print("All was good")
