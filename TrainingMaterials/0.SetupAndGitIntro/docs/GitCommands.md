@@ -81,6 +81,8 @@ How to rebase your branch against master
 git checkout local-branch-name #if you are not already on it
 git fetch origin
 git rebase origin/main
+# [..] do changes and commit
+git push -f
 ```
 
 How to save or stash changes
