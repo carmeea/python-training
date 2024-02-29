@@ -5,7 +5,6 @@ Then accept a number from the user and verify if it is part of the found list nu
 Hint: use methods range(), input(), append(), try-except
 """
 
-"""
 all_numbers = []
 
 for number in range(1500, 2701):
@@ -38,7 +37,7 @@ for number in all_numbers:
     else:
         break
 
-"""
+
 """
 2. Write a program that accepts a word from the user and print it in reverse.  
 Catch any errors from user's input.
