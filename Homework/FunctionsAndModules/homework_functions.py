@@ -14,6 +14,7 @@
 4. Create a function with a default argument value
 """
 
+
 """
 5. Create a function which accepts 3 values and return the maximum value
 """
@@ -26,12 +27,13 @@
 7. Define a function that accepts 2 values and print its sum, subtraction and multiplication
 """
 
+
 """
 8. Define a function which ask the user for a number and print “Even” if the number is even or “Odd” if the number is odd
 """
 
 """
-9. Define a function that checks if a given number is a prime number​
+9. Define a function that checks if a given number is a prime number
 """
 
 """
@@ -39,7 +41,7 @@
 """
 
 """
-11. Create a variable with values [‘Siya’, ‘Tiya’, ‘Guru’, ‘Daksh’, ‘Riya’, ‘Guru’] and return “Guru”
+11. Create a variable with values ["Siya", "Tiya", "Guru", "Daksh", "Riya", "Guru"] and return “Guru”
 """
 
 """
@@ -73,6 +75,7 @@
 """
 19. Given a tuple, use a range of indexes to print the third, fourth, and fifth item in the tuple​
 """
+
 
 """
 20. Given a dictionary, add a new key/value to the dictionary and print each item
