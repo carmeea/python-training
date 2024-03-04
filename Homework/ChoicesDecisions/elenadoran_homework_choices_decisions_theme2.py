@@ -5,6 +5,11 @@ Hint: use methods range(), input(), try-except
 """
 
 
+def enter_word():
+    word = input("Enter a word: ")
+    return word
+
+
 def reverse_word(word):
     word_reverse = ""
     index = len(word)
@@ -17,7 +22,8 @@ def reverse_word(word):
             raise ValueError("Error: You did not enter a word")
     except ValueError as e:
         print(e)
+        return None
     return word_reverse
 
 
-print(reverse_word(input("Enter a word: ")))
+print(reverse_word(enter_word()))

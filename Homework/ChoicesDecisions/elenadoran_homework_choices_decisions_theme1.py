@@ -6,7 +6,17 @@ Hint: use methods range(), input(), append(), try-except
 """
 
 
-def numbers(start, end):
+def enter_start_range():
+    start_range = input("Enter start range ")
+    return int(start_range)
+
+
+def enter_end_range():
+    end_range = input("Enter end range ")
+    return int(end_range)
+
+
+def get_list(start, end):
     found_list = []
 
     for i in range(start, end + 1):
@@ -14,17 +24,22 @@ def numbers(start, end):
             print(i, "is divisible by 7 and multiple of 5")
             found_list.append(i)
 
-    print(found_list)
+    print("The found list is: ", found_list)
+    return found_list
 
+
+def number(found_list):
     number = input("Enter a number: ")
     try:
         i = int(number)
+        found_list = get_list(enter_start_range(), enter_end_range())
         if i in found_list:
             print("The number is part of the found list numbers")
         else:
             print("The number is not part of the found list numbers")
-    except ValueError:
+    except ValueError as e:
         print("You did not enter a number")
 
 
-numbers(1500, 2700)
+# get_list(enter_start_range(), enter_end_range())
+number(get_list)
