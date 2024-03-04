@@ -12,13 +12,11 @@ Implementation:
 6. Calling the 'sum' function with a tuple of numbers (8, 2, 3, 0, 7)
 """
 
-
 def sum(numbers):
     total = 0
     for x in numbers:
         total += x
     print(total)
-
 
 sum((9, 2, 3, 0, 8))
 
@@ -37,14 +35,12 @@ Implementation:
 7. Print the result of calling the 'unique_list' function with a list containing duplicate elements
 """
 
-
 def unique_list(l):
     x = []
     for a in l:
         if a not in x:
             x.append(a)
     return x
-
 
 #print(unique_list([1, 2, 3, 3, 3, 3, 4, 5]))
 
@@ -64,7 +60,6 @@ Implementation:
 8. Print the result of calling the 'string_reverse' function with the input string '1234abcd'
 """
 
-
 def string_reverse(string_1):
     rstr1 = ""
     index = len(string_1)
@@ -73,7 +68,6 @@ def string_reverse(string_1):
         rstr1 += string_1[index - 1]
         index = index - 1
     return rstr1
-
 
 #print(string_reverse("1234abcd"))
 
@@ -90,13 +84,11 @@ Implementation:
 5. Call the 'test_range' function with the argument 5
 """
 
-
 def test_range(n):
     if n in range(3, 9):
         print("%s is in the range" % str(n))
     else:
         print("The number is outside the given range.")
-
 
 #test_range(5)
 
@@ -134,7 +126,6 @@ def string_test(s):
     print("No. of Upper case characters: ", d["UPPER_CASE"])
     print("No. of Lower case Characters: ", d["LOWER_CASE"])
 
-
 #string_test("The quick Brown Fox")
 
 
@@ -143,6 +134,7 @@ Write a Python program to get the current time.
 '''
 
 import datetime
+
 #print(datetime.datetime.now().time())
 
 
@@ -162,6 +154,7 @@ Write a Python program to generate a float between 0 and 1, inclusive and genera
 '''
 
 import random 
+
 def random_number():
     print("Generate a float between 0 and 1, inclusive:")
     print(random.uniform(0, 1))
@@ -177,6 +170,7 @@ Write a Python program to shuffle the elements of a given list.
 '''
 
 import random 
+
 def random_shuffle():
     nums = [1, 2, 3, 4, 5]
     print("Original list:")
