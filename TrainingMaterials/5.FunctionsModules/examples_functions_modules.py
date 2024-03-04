@@ -130,6 +130,32 @@ def string_test(s):
 
 
 '''
+Return the square root of a number.
+'''
+
+import math
+
+def square_root(num):
+    x = math.sqrt(64)
+    print(x)
+
+#square_root(64)
+
+
+'''
+Return the name of the operating system and create a new directory.
+'''
+
+import os
+
+def os_module():
+    print(os.name)
+    os.mkdir("test")
+
+#os_module()
+
+
+'''
 Write a Python program to get the current time.
 '''
 
