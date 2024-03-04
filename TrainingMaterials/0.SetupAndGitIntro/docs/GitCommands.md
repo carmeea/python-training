@@ -31,7 +31,7 @@ Git Useful Links
 
 How to view all remote and local branches
 ```bash
-git fetch -—all #fetch all branches from all remotes
+git fetch --all #fetch all branches from all remotes
 git branch # view local branches 
 git branch -r #view remote branches
 git branch -a #view all remote and local branches
@@ -52,12 +52,12 @@ How to create a local branch from main and push to remote
 ```bash
 git checkout main
 git checkout -b local-branch-name # create branch and switch to it
-git push --set-upstream origin # or push the current branch and set the remote as upstream
+git push --set-upstream origin local-branch-name # or push the current branch and set the remote as upstream
 ```
 
 How to create a local branch from a remote branch
 ```bash
-git fetch origin <remote-branch> 
+git fetch origin remote-branch-name 
 git checkout --track origin/[remote-branch-name] #using the same remote branch name
 git checkout -b local-branch-name --track origin/[remote-branch-name] #using a different local branch name
 ```
@@ -72,8 +72,8 @@ git push
 
 How to add changes to last commit
 ```bash
-git commit —amend -m "message"
-git push —force
+git commit -—amend -m "message"
+git push -—force
 ```
 
 How to rebase your branch against master
@@ -81,6 +81,8 @@ How to rebase your branch against master
 git checkout local-branch-name #if you are not already on it
 git fetch origin
 git rebase origin/main
+# [..] do changes and commit
+git push -f
 ```
 
 How to save or stash changes
@@ -94,14 +96,14 @@ git stash drop <stash_id> # deletes a particular stash from the stash list.
 
 How to soft cancel commits
 ```bash
-git revert HEAD —no-edit # git revert HEAD
+git revert HEAD -—no-edit # git revert HEAD
 git push
 ```
 
 How to delete changes
 ```bash
-git reset —hard [HEAD~2 or c87a087] # deletes changes
-git reset —soft [HEAD~2 or c87a087] # needs only to commit
+git reset -—hard [HEAD~2 or c87a087] # deletes changes
+git reset -—soft [HEAD~2 or c87a087] # needs only to commit
 git reset [—mixed][HEAD~2 or c87a087] # needs add and commit
 ```
 
