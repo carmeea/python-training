@@ -1,6 +1,5 @@
 # Manage FILES
 
-
 # Opening and Reading files
 """
 Before reading from a file, first you must open it.
@@ -10,8 +9,6 @@ open() - requires 2 parameters, param1 -> path to file, param2 -> access mode
 'a' mode: for appending. If file doesn't exit will be created, if it exists data written to the file will automatically be added at the end.
 'r+' mode: reading and wrinting
 readline() - each time function is called, it reads a new line and adds at the end '\n' to the end of each line.
-
-
 """
 
 # Opening a file in the same dirtectory
