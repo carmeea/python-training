@@ -1,5 +1,7 @@
 import os, math, random, datetime
-#from homework_functions import lungime
+from homework_module import lung
+
+
 """
 1. Print your current working directory
 """
@@ -40,7 +42,7 @@ print(f"time right now is: {today.strftime('%H:%M:%S')}")
 8. Converts a number of seconds to a date
 """
 seconds_input=input("give me a number of seconds to convert them to a date\n")
-print(datetime.timedelta(seconds=int(seconds_input)))
+print(datetime.date.fromtimestamp(int(seconds_input)))
 """
 9. Print the value of pi
 """
@@ -49,5 +51,6 @@ print(f"Pi is: {math.pi}")
 """
 10. Create your own module and import it in another python file
 """
+
 user_input=input("Give me a word for counting it's length:\n")
-print(f"length of given word is: {lungime(user_input)}")
+print(f"length of given word is: {lung(user_input)}")
