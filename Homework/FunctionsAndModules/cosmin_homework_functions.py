@@ -48,29 +48,106 @@ print(result)
 4. Create a function with a default argument value
 """
 
+def greet(name, message="How are you?"):
+    print("Hello", name + ". " + message)
+
+greet("Bob")
+
+
 """
 5. Create a function which accepts 3 values and return the maximum value
 """
+
+def max_value(x, y, z):
+    list = [x , y, z]
+    return max(list)
+
+x = 15
+y = 21
+z = -2
+print(max_value(x, y, z))
+
 
 """
 6. Define a function which accepts a number and return if the number is even or odd
 """
 
+def even_or_odd(n):  
+    if (n % 2) == 0:
+        print("The number is even!")
+    else:
+        print("The number is odd!")
+    
+n = 18
+even_or_odd(n)
+
+
 """
 7. Define a function that accepts 2 values and print its sum, subtraction and multiplication
 """
+
+def operations(x, y):
+    sum =  x + y
+    print(f"Sum: {sum}")
+
+    subtraction = x - y
+    print(f"Subtraction: {subtraction}")
+
+    multiplication = x * y
+    print(f"Multiplication: {multiplication}")
+
+x = 3
+y = 5
+operations(x, y)
+
 
 """
 8. Define a function which ask the user for a number and print “Even” if the number is even or “Odd” if the number is odd
 """
 
+def even_or_odd():
+    try:
+        n = int(input("Enter a number: "))
+        if (n % 2) == 0:
+            print("Even")
+        else:
+            print("Odd")
+    except ValueError:
+        print("Please enter a valid number!")
+
+even_or_odd()
+
 """
 9. Define a function that checks if a given number is a prime number​
 """
 
+def is_prime(n):
+    if n < 2:
+        return False
+    
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+
+number = 15
+if is_prime(number):
+    print(f"{number} is a prime number!")
+else:
+    print(f"{number} is not a prime number!")
+
+
 """
 10. Define a function which prints all the numbers between 1000 and 2000 which are divisible by 7 but are not a multiple of 5
 """
+
+def find_numbers():
+    for n in range(1000, 2001):
+        if n % 7 == 0 and n % 5 != 0:
+            print(n)
+
+find_numbers()
+
 
 """
 11. Create a variable with values [‘Siya’, ‘Tiya’, ‘Guru’, ‘Daksh’, ‘Riya’, ‘Guru’] and return “Guru”
