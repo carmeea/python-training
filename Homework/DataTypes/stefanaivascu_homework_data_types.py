@@ -36,14 +36,31 @@ conference_rooms = ('Aspen', 'Birch', 'Cedar')
 #a. Print the entire tuple.
 print(conference_rooms)
 #b. Ask the user to input the number (1, 2, or 3) corresponding to the room they want to book.
+
+room_number = int(input("Enter the number (1, 2, or 3) corresponding to the room you want to book: "))
+
 #c. Print a confirmation message including the name of the booked room.
+
+print(f"You have successfully booked room number {room_number}")
+
 #%%
 
-
 #Create a list of products: 'Laptop', 'Phone', 'Printer', 'Headset', 'Monitor'.
+
+products = ['Laptop', 'Phone', 'Printer', 'Headset', 'Monitor']
+print(products)
+
 #a. The company has decided to remove 'Printer' from the inventory and add 'Tablet'.
+
+products.remove('Printer')
+products.append('Tablet')
+
 #b. Update the list and print the updated inventory.
+
+print(f"Updated Inventory:{products}")
+
 #c. Print the list
 
+print(products)
 
 #%%
