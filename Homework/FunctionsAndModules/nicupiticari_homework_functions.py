@@ -1,0 +1,100 @@
+# """
+# 1. Create a function which prints first 10 natural numbers
+# """
+
+def function1():
+    print("The first 10 natural numbers are: ")
+    for i in range(1, 11):
+        print(i)
+function1()
+# """
+# 2. Create a function which prints sum of all numbers from 1 to a given number (e.g. print sum of all numbers from 1 to 5)
+# """
+def function2():
+    sumAll=0
+    inputNumber=int(input("Enter a number:"))
+    for i in range(1,inputNumber+1):
+        sumAll=sumAll+i
+    print (sumAll)
+function2()
+# """
+# 3. Create a function with 3 arguments and return average only if is greater than 0
+# """
+
+# """
+# 4. Create a function with a default argument value
+# """
+
+# """
+# 5. Create a function which accepts 3 values and return the maximum value
+# """
+def function2(val1,val2,val3):
+    maxVal=val1  
+    if val2>maxVal:
+        maxVal=val2
+    if val3>maxVal:
+        maxVal=val3
+    print("Maximum value is: "+str(maxVal))
+val1=int(input("Enter first value:"))
+val2=int(input("Enter second value:"))
+val3=int(input("Enter third value:"))
+function2(val1,val2,val3)
+# """
+# 6. Define a function which accepts a number and return if the number is even or odd
+# """
+
+# """
+# 7. Define a function that accepts 2 values and print its sum, subtraction and multiplication
+# """
+
+# """
+# 8. Define a function which ask the user for a number and print “Even” if the number is even or “Odd” if the number is odd
+# """
+
+# """
+# 9. Define a function that checks if a given number is a prime number​
+# """
+
+# """
+# 10. Define a function which prints all the numbers between 1000 and 2000 which are divisible by 7 but are not a multiple of 5
+# """
+
+# """
+# 11. Create a variable with values [‘Siya’, ‘Tiya’, ‘Guru’, ‘Daksh’, ‘Riya’, ‘Guru’] and return “Guru”
+# """
+
+# """
+# 12. Assign an integer to a variable, then print it
+# """
+
+# """
+# 13. Type a couple of words or a short sentence in a variable, then print it
+# """
+
+# """
+# 14. Assign a float with 2 decimals to a variable
+# """
+
+# """
+# 15. Assign True or False to a variable then print it 
+# """
+
+# """
+# 16. Calculate the length of a string and return that value
+# """
+
+# """
+# 17. Get the largest and the smallest number from a list
+# """
+
+# """
+# 18. Assign 3 to variable glass_of_water, print "I drank 3 glasses of water today." and after that assign a new value to our variable. Print the result
+# """
+
+# """
+# 19. Given a tuple, use a range of indexes to print the third, fourth, and fifth item in the tuple​
+# """
+
+# """
+# 20. Given a dictionary, add a new key/value to the dictionary and print each item
+# """
