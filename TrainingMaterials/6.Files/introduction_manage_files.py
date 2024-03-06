@@ -28,9 +28,6 @@ firstLineF2 = f2.readline()
 print(firstLineF2)
 f2.close()
 
-# Opening a file in another location
-
-
 # Using For Loop to Read Text files
 f3 = open("myTextFile.txt", "r")
 for line in f3:
