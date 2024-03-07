@@ -3,6 +3,7 @@ import json
 f = open("Homework/InteractiveProgram/rates.json")
 j = json.load(f)
 
+<<<<<<< HEAD
 print("Our current rates are:")
 for i in j["rates"]:
     print(f"1 {i['currency']} = {i['value']} RON")
@@ -25,5 +26,17 @@ else:
 
     if not found:
         print("We can't exchange to the selected currency. Good day!")
+=======
+print("our current rates are:")
+for i in j["value"]:
+    print(i)
+
+
+# amount = input("what is the RON amount that you wish to exchange")
+# valuta = input("what is the currency you wish to exchange to")
+
+# for valuta in j["currency"]:
+#     print(f"The amount of {amount} RON will be converted to {amount/int(f["value"])}.2f {valuta}")
+>>>>>>> 7e879d6 (convertor cu rates din fisier)
 
 f.close()
