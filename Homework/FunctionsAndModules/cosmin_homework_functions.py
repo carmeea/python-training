@@ -153,29 +153,84 @@ find_numbers()
 11. Create a variable with values [‘Siya’, ‘Tiya’, ‘Guru’, ‘Daksh’, ‘Riya’, ‘Guru’] and return “Guru”
 """
 
+def find_name(names):
+    return names[names.index("Guru")] if "Guru" in names else None
+    
+names_list = ["Siya", "Tiya", "Guru", "Daksh", "Riya", "Guru"]
+result = find_name(names_list)
+
+print(result)
+
+
 """
 12. Assign an integer to a variable, then print it
 """
+
+def print_integer():
+    x = 23
+    print(x)
+
+print_integer()
+
 
 """
 13. Type a couple of words or a short sentence in a variable, then print it
 """
 
+def print_sentence():
+    x = "This is a test sentence!"
+    print(x)
+
+print_sentence()
+
 """
 14. Assign a float with 2 decimals to a variable
 """
+
+def print_float():
+    x = 5.24
+    print(x)
+
+print_float()
+
 
 """
 15. Assign True or False to a variable then print it 
 """
 
+def print_boolean():
+    x = False
+    print(x)
+
+print_boolean()
+
+
 """
 16. Calculate the length of a string and return that value
 """
 
+def string_length(string):
+    length = len(string)
+    return length
+
+string = "Hello World"
+result = string_length(string)
+print(f"The length of the string '{string}' is: {result}")
+
+
 """
 17. Get the largest and the smallest number from a list
 """
+
+def find_largest_smallest_number(numbers):
+    largest = max(numbers)
+    smallest = min(numbers)
+    return largest, smallest
+
+list_numbers = [5, 34, 22, 193, -3, 63]
+result = find_largest_smallest_number(list_numbers)
+print(f"The largest number is {result[0]} and the smallest number is {result[1]}")
+
 
 """
 18. Assign 3 to variable glass_of_water, print "I drank 3 glasses of water today." and after that assign a new value to our variable. Print the result
