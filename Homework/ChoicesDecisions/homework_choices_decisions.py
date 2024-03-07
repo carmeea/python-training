@@ -10,6 +10,7 @@ Catch any errors from user's input.
 Hint: use methods range(), input(), try-except
 """
 
+<<<<<<< HEAD
 # #1
 # results = []
 # for i in range(1500, 2700, 5):
@@ -71,3 +72,24 @@ try:
          print("given input is not a word")
 except TypeError:
     print("Invalid input.Please try again\n")
+=======
+#1
+results = []
+for i in range(1500, 2700, 5):
+    if i % 7 == 0:
+        results.append(i)
+
+print(results)
+
+user_input = input("give me an integer to check wether it is in the results list\n")
+
+try:
+    if int(user_input) in results:
+        print("Number given is in the result list")
+    else:
+        print("number not in list")
+except ValueError:
+    print("Invalid input. Please try again")
+
+#2
+>>>>>>> 6fb3619 (ceva)
