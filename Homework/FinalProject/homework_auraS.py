@@ -67,7 +67,7 @@ def extract_unique_subcategory_from_file(file_path):
         sys.exit(1)
 
 
-print(extract_unique_subcategory_from_file(file_path))
+# print(extract_unique_subcategory_from_file(file_path))
 
 
 # in caz ca ne razgandim si nu mai dam user input cu numere
@@ -76,3 +76,25 @@ def subcategory_lower():
     new_products = extract_unique_subcategory_from_file(file_path)
     product_subcategory = [i.lower() for i in new_products]
     return product_subcategory
+
+
+def replace_chars(lst):
+    new_lst = [x.replace("-", " ") for x in lst]
+    return new_lst
+
+
+subcategories = subcategory_lower()
+subcat = replace_chars(subcategories)
+
+while True:
+    try:
+        subcategory = input("Enter one of the subcategories: " + str(subcat))
+        subcategory = subcategory.lower()
+        if subcategory in subcat:
+            print("File was created")
+            break
+        else:
+            print("File was no created. Try again!")
+            break
+    except ValueError as e:
+        print(str(e))
