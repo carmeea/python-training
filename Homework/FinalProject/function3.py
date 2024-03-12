@@ -12,7 +12,6 @@ def getSubcategory(dictionary):
             for key in dictionary.keys():
                 print(key)
                 new_dict.setdefault(key,[]).append(dictionary[key])
-                print(new_dict)
     return new_dict
 #    return subcategoryList
 
