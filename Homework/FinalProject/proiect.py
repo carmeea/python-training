@@ -10,7 +10,7 @@ def find_products_for_subcategory(subcategory, data):
     products = []
     csv_subcategory = ''
     for row in data:
-        if subcategory.lower() in row['Subcategory'].lower() and subcategory.lower() != 'si':
+        if subcategory.lower() in row['Subcategory'].lower() and subcategory.lower() != 'si' and subcategory.islower():
             products.append(row)
             csv_subcategory = row['Subcategory'].lower()
     return products, csv_subcategory
