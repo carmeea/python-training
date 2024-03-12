@@ -1,6 +1,6 @@
 
-def process_user_input(userInput):
-    #userInput=input("Introduceti subcategoria: ")
+def process_user_input():
+    userInput=input("Introduceti subcategoria: ")
     checkOther=0
     userInput=userInput.strip()
          
@@ -12,15 +12,15 @@ def process_user_input(userInput):
         if checkOther>0:       
             raise ValueError("Input should contain only text and spaces")
         userInput = userInput.lower()
-        userInput = userInput.capitalize()
+        # userInput = userInput.capitalize()
         return userInput
     except ValueError as e:
         print(f"Error: {e}")
         return None
 
 #user_input=""
-user_input=input("introduceti subcategoria: ")  
-result=process_user_input(user_input)
-#result=process_user_input()
+# user_input=input("introduceti subcategoria: ")  
+# result=process_user_input(user_input)
+result=process_user_input()
 
 print("Processed input:-",result)

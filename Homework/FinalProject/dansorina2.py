@@ -22,6 +22,12 @@ if os.path.isfile(path):
     print(data_dictionary)
 else:
     print("File does not exist.")
+def getSubcategory(dictionary):
+    subcategoryList = []
+    for val in (i[0] for i in dictionary.values()):
+        subcategory = val.split('/')[4]
+        subcategoryList.append(subcategory)
+    return subcategoryList
 test = []
 test = getSubcategory(data_dictionary) 
 print(test)
