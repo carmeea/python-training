@@ -12,7 +12,7 @@ def process_user_input(userInput):
         if checkOther>0:       
             raise ValueError("Input should contain only text and spaces")
         userInput = userInput.lower()
-        userInput = userInput.capitalize()
+        userInput = userInput.capitalize()#??????????
         return userInput
     except ValueError as e:
         print(f"Error: {e}")
