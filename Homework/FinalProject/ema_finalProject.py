@@ -50,7 +50,6 @@ def find_products_by_subcategory(
                             keyword_index + 1 < len(segments)
                             and segments[keyword_index + 1] == subcategory_input
                         ):
-                            # If it matches, write this product's data to our CSV file.
                             csv_writer.writerow([key] + list(value))
                             found = True
                     except ValueError:
