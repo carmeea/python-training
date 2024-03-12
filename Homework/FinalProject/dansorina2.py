@@ -3,6 +3,7 @@
 
 import csv
 import os
+from function3 import getSubcategory
 
 def csv_dictionary(file_path):
     product_dictionary = {}
@@ -21,3 +22,7 @@ if os.path.isfile(path):
     print(data_dictionary)
 else:
     print("File does not exist.")
+test = []
+test = getSubcategory(data_dictionary) 
+print(test)
+ 
