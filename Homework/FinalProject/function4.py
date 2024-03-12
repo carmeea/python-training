@@ -27,16 +27,11 @@ dictionary = {
 def getDictBySubcategory(dictionary):
     new_dict = {}
     for key, val in dictionary.items():
-        # print(key)
-        # print(val)
         subcategory = val[0].split("/")[4].lower()
         if result == subcategory:
-            # new_dict = {key: val}
-            # print(new_dict)
             new_dict.update({key: val})
     if len(new_dict) < 1:
-        raise ValueError("Type a valid category!")
-
+        raise ValueError("This subcategory does not exist. Try again!")
     return new_dict
 
 
