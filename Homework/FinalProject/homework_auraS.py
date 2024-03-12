@@ -17,7 +17,6 @@ Note: Apply concepts from previous lessons (data types,  loops, exception handli
 import csv
 import sys
 import os
-from urllib.parse import urlparse
 
 file_path = "data.csv"
 
@@ -83,8 +82,18 @@ def replace_chars(lst):
     return new_lst
 
 
-subcategories = subcategory_lower()
-subcat = replace_chars(subcategories)
+subcategories_lower = subcategory_lower()
+subcat = replace_chars(subcategories_lower)
+
+
+def find_element(csv_file, element):
+    with open(csv_file, "r") as file:
+        csv_reader = csv.reader(file)
+        for row in csv_reader:
+            if element in row:
+                return row
+    return None
+
 
 while True:
     try:
