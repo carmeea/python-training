@@ -65,4 +65,4 @@ def find_products_by_subcategory(
 
 subcategories = get_subcategories_input()
 data_dict = read_csv("data.csv")
-find_products_by_subcategory(data_dict, subcategories, "output")
+find_products_by_subcategory(data_dict, subcategories, "Homework/FinalProject/")
