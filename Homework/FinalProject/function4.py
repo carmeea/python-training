@@ -12,9 +12,14 @@ dictionary = {
         "calorii mici",
     ],
     "Croissant cu crema de cacao 65g": [
-        "https://www.mega-image.ro/Dulciuri-si-snacks/Croissant si cola/Croissant-cu-crema-de-cacao-65g/p/5346",
+        "https://www.mega-image.ro/Dulciuri-si-snacks/C/Croissant-cu-crema-de-cacao-65g/p/5346",
         "1000gr",
         "199kcal",
+    ],
+    "Croissanta cu crema de cacao 65g": [
+        "https://www.mega-image.ro/Dulciuri-si-snacks/C/Croissant-cu-crema-ddde-cacao-65g/p/5346",
+        "1000gr",
+        "1300kcal",
     ],
 }
 
@@ -22,9 +27,16 @@ dictionary = {
 def getDictBySubcategory(dictionary):
     new_dict = {}
     for key, val in dictionary.items():
-        subcategory = "".join(val).split("/")[4].lower()
+        # print(key)
+        # print(val)
+        subcategory = val[0].split("/")[4].lower()
         if result == subcategory:
-            new_dict = {key: val}
+            # new_dict = {key: val}
+            # print(new_dict)
+            new_dict.update({key: val})
+    if len(new_dict) < 1:
+        raise ValueError("Type a valid category!")
+
     return new_dict
 
 
