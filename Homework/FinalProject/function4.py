@@ -35,4 +35,3 @@ def getDictBySubcategory(dictionary):
     return new_dict
 
 
-print(getDictBySubcategory(dictionary))

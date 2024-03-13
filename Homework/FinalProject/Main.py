@@ -17,19 +17,16 @@ def csv_dictionary(file_path):
             product_dictionary[primary_key] = values_tuple
     return product_dictionary
 
-path = "/home/alina/work/python-training/Homework/FinalProject/data.csv"
+path = "/home/skippy/work/python-training/Homework/FinalProject/data.csv"
 if os.path.isfile(path):
     data_dictionary = csv_dictionary(path)
-    print(data_dictionary)
+ 
 else:
     print("File does not exist.")
 
 
-
+#headere= [_key	link	nutritional_info/Grasimi	nutritional_info/Valoare energetica	nutritional_info/Glucide	nutritional_info/Fibre	nutritional_info/Sodiu	nutritional_info/Proteine	nutritional_info/Grasimi saturate	Ingrediente	Alergeni]
 test = []
 
 test = getDictBySubcategory(data_dictionary) 
 finalCsv =  csv_file_creation(test)
-
-print(test)
- 

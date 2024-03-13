@@ -39,16 +39,11 @@ def csv_file_creation(input_dict):
 
         with open(filename, 'w', newline='', encoding='utf-8') as file:
             writer = csv.writer(file)
-        
-            writer.writerow(input_dict.keys())
-            
-            num_rows = max(len(v) for v in input_dict.values())
-            # for i in range(num_rows):
-            #     row_data = [input_dict[key][i] if i < len(input_dict[key]) else '' for key in input_dict.keys()]
-            #     writer.writerow(row_data)
-            for column in zip(* input_dict.values()):
-                writer.writerow(column)
-            
+
+            for key in input_dict.keys():
+                values_list = list(input_dict[key])  # Convert tuple to list
+                writer.writerow([key] + values_list)
+
 
         print(f"CSV file '{filename}' created successfully.")
     except ValueError as e:

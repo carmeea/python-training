@@ -7,7 +7,7 @@ def process_user_input():
     try:
         #if not all(userInput.isalpha() or char.isspace() for char in userInput):
         for char in userInput:
-            if not (char.isalpha() or char.isspace()):
+            if not (char.isalpha() or char.isspace() or char=="-"):
                checkOther=checkOther+1
         if checkOther>0:       
             raise ValueError("Input should contain only text and spaces")
