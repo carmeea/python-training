@@ -1,5 +1,6 @@
 import csv
 import sys
+import os
 
 file_path = "/home/cosmin/work/python-training/Homework/FinalProject/data.csv"
 
@@ -49,6 +50,10 @@ def get_user_subcategory(subcategories):
 
 
 def create_csv_for_subcategory(subcategory, input_file_path, output_file_path):
+    if os.path.exists(output_file_path):
+        print(f"CSV file for '{subcategory}' already exists. Aborting.")
+        sys.exit(1)
+
     with open(input_file_path, "r") as file:
         csv_reader = csv.reader(file)
         header = next(csv_reader)  # Skip the header
