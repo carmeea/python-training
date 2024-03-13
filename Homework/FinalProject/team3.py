@@ -7,24 +7,27 @@ file_path = "data.csv"
 
 def extract_unique_subcategory_from_file(file_path):
     try:
-        with open(file_path, "r") as file:
-            csv_reader = csv.reader(file)
-            url_lst = [row[1] for row in csv_reader]
-            url_lst.pop(0)
-            unique_subcategories = set(
-                url.split("/")[4].replace("-", " ").title() for url in url_lst
-            )
-            return list(unique_subcategories)
-
+        file = open(file_path, "r")
     except FileNotFoundError:
         print(f"File {file_path} not found. Aborting")
         sys.exit(1)
     except OSError:
         print(f"OS error occurred trying to open {file_path}")
         sys.exit(1)
-    except Exception as err:
-        print(f"Unexpected error opening {file_path} is", repr(err))
+    except Exception as e:
+        print(f"Unexpected error opening {file_path} is", repr(e))
         sys.exit(1)
+    else:
+        with file:
+            csv_reader = csv.reader(file)
+            if not csv_reader:
+                print("No data in file " + csv_reader)
+            url_lst = [row[1] for row in csv_reader]
+            url_lst.pop(0)
+            unique_subcategories = set(
+                url.split("/")[4].replace("-", " ").title() for url in url_lst
+            )
+            return list(unique_subcategories)
 
 
 def display_subcategories(items):
@@ -50,7 +53,7 @@ def get_user_subcategory(subcategories):
 def create_csv_for_subcategory(subcategory, input_file_path, output_file_path):
     if os.path.exists(output_file_path):
         print(f"CSV file for '{subcategory}' already exists. Aborting.")
-        sys.exit(1)
+        sys.exit(0)
 
     with open(input_file_path, "r") as file:
         csv_reader = csv.reader(file)
@@ -75,6 +78,7 @@ selected_subcategory = get_user_subcategory(subcategories)
 print(f"You selected: {selected_subcategory}")
 
 output_file_path = f"selected_products_{selected_subcategory.replace(' ', '')}.csv"
+
 create_csv_for_subcategory(selected_subcategory, file_path, output_file_path)
 
 print(f"CSV file for '{selected_subcategory}' products created: {output_file_path}")
