@@ -39,7 +39,7 @@ def play(word):
     # Display initial state of the word with "_"
     print(word_completion)
     print("\n")
-    # Loop until the words is guessed or the user rans out of tries
+    # Loop until the words is guessed or the user runs out of tries
     while not guessed and tries > 0:
         guess = input("Please guess a letter or word: ").upper()
         # Guessing the letter
@@ -56,13 +56,13 @@ def play(word):
             else:
                 print("Good job,", guess, "is in the word!")
                 guessed_letters.append(guess)
-                # Update word_completion to later display it to the user
+                # Update word_completion to display it later to the user
                 word_as_list = list(
                     word_completion
                 )  # convert word_completion to a list to index it
-                # Final all indeces where guess occurs in the word, using list comprehention
+                # Find all indeces where guess occurs in the word, using list comprehention
                 indices = [i for i, letter in enumerate(word) if letter == guess]
-                # Replace each underscore with guessed letter
+                # Replace each underscore "_" with guessed letter
                 for index in indices:
                     word_as_list[index] = guess
                 # Convert back the list to a string
@@ -81,7 +81,7 @@ def play(word):
                 # User correctly guessed the word
                 guessed = True
                 word_completion = word
-        # Type something else
+        # User types something else
         else:
             print("Not a valid guess.")
         # Print current state of the hangman
@@ -92,9 +92,7 @@ def play(word):
     if guessed:
         print("Congrats, you guessed the word! You win!")
     else:
-        print(
-            "Sorry, you ran out of tries. The word was " + word + ". Maybe next time!"
-        )
+        print("Sorry, you ran out of tries. The word was " + word + ". Maybe next time!")
 
 
 # Display visual hangman board
@@ -173,7 +171,7 @@ def display_hangman(tries):
     return stages[tries]
 
 
-# Game play
+# Logic for game play
 def main():
     word = get_word()
     play(word)
