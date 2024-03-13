@@ -43,9 +43,12 @@ def csv_file_creation(input_dict):
             writer.writerow(input_dict.keys())
             
             num_rows = max(len(v) for v in input_dict.values())
-            for i in range(num_rows):
-                row_data = [input_dict[key][i] if i < len(input_dict[key]) else '' for key in input_dict.keys()]
-                writer.writerow(row_data)
+            # for i in range(num_rows):
+            #     row_data = [input_dict[key][i] if i < len(input_dict[key]) else '' for key in input_dict.keys()]
+            #     writer.writerow(row_data)
+            for column in zip(* input_dict.values()):
+                writer.writerow(column)
+            
 
         print(f"CSV file '{filename}' created successfully.")
     except ValueError as e:
@@ -53,14 +56,14 @@ def csv_file_creation(input_dict):
     except Exception as e:
         print(f"Fatality: {e}")
 
-my_dict = {
-    'Product': ['ciocolata', 'biscuiti', 'napolitane', 'snacks'],
-    'SubCategory': ['alba', 'crema', 'vanilie', 'chipsuri']
-}
-csv_file_creation(my_dict)
+# my_dict = {
+#     'Product': ['ciocolata', 'biscuiti', 'napolitane', 'snacks'],
+#     'SubCategory': ['alba', 'crema', 'vanilie', 'chipsuri']
+# }
+# csv_file_creation(my_dict)
 
-empty_dict = {}
-csv_file_creation(empty_dict)
+# empty_dict = {}
+# csv_file_creation(empty_dict)
 
 
 
