@@ -48,9 +48,26 @@ def get_user_subcategory(subcategories):
             print("Invalid subcategory. Please enter a valid subcategory.")
 
 
+def create_csv_for_subcategory(subcategory, input_file_path, output_file_path):
+    with open(input_file_path, "r") as file:
+        csv_reader = csv.reader(file)
+        header = next(csv_reader)  # Skip the header
+        rows_for_subcategory = [row for row in csv_reader if normalize_input(row[1].split("/")[4]) == subcategory]
+
+    with open(output_file_path, "w", newline="") as output_file:
+        csv_writer = csv.writer(output_file)
+        csv_writer.writerow(header)
+        csv_writer.writerows(rows_for_subcategory)
+        
+
 subcategories = extract_unique_subcategory_from_file(file_path)
 display_subcategories(subcategories)
 
 selected_subcategory = get_user_subcategory(subcategories)
 
 print(f"You selected: {selected_subcategory}")
+
+output_file_path = f"selected_products_{selected_subcategory.replace(' ', '')}.csv"
+create_csv_for_subcategory(selected_subcategory, file_path, output_file_path)
+
+print(f"CSV file for '{selected_subcategory}' products created: {output_file_path}")
