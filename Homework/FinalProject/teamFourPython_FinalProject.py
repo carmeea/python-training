@@ -17,8 +17,6 @@ def enter_subcategory():
     return list
 
 
-S
-
 """
 create_dictionary() function is used to pass keys as tuple inside a dictionary.
 First open the .csv file and read data from it.
