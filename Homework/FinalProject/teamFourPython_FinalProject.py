@@ -26,7 +26,7 @@ Example: https://www.mega-image.ro/Dulciuri-si-snacks/Dropsuri-guma-si-jeleuri/D
         -> we get 'dropsuri guma si jeleuri'
 Third a dictionary was created from tuple with data pairs key-value: ('_key': 'link').
 """
-
+#check after alphanumeric - alpha()
 
 def create_dictionary():
     my_dictionary = {}
