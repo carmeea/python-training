@@ -1,4 +1,4 @@
-from functia_1_process_user_input import result
+from process_user_input import result
 
 dictionary = {
     "pufuleti cu sare": [
@@ -31,7 +31,7 @@ def getDictBySubcategory(dictionary):
         if result == subcategory:
             new_dict.update({key: val})
     if len(new_dict) < 1:
-        raise ValueError("This subcategory does not exist. Try again!")
+        raise ValueError("This subcategory does not exist")
     return new_dict
 
 

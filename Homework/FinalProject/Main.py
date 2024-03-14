@@ -1,9 +1,14 @@
-# Second function = este o functie care citeste / converteste fisierul csv intr-un dictionar 
-#( dictionarul are ca si prima cheie prima coloana din csv si ca valoare are tuple pentru restul coloanelor)
+# process_user_input = solve the user input for key sensitive and return the value (ia inputul , il verifica/ modifica si il returneaza ca o valoare care se va folosi in urmatoarea functie ca si argument)
+# csv_dictionary = este o functie care citeste / converteste fisierul csv intr-un dictionar ( dictionarul are ca si prima cheie prima coloana din csv si ca valoare are tuple pentru restul coloanelor)
+# getDictBySubcategory =  functie care sa spliteze linkul
+#                         sa parcurga toate linkurile in dictionarul returnat de functia de mai sus
+#                         compara input user cu lista de subcategorii
+#                         returneaza un dictionar cu subcategoria introdusa de user
+# csv_file_creation =  sa creeze un file csv nou cu produsele aferente sau sa returneze eroare daca inputul e gol
 
 import csv
 import os
-from function4 import getDictBySubcategory
+from getDictBySubcategory import getDictBySubcategory
 from csv_file_creation import csv_file_creation
 
 def csv_dictionary(file_path):
@@ -24,8 +29,6 @@ if os.path.isfile(path):
 else:
     print("File does not exist.")
 
-
-#headere= [_key	link	nutritional_info/Grasimi	nutritional_info/Valoare energetica	nutritional_info/Glucide	nutritional_info/Fibre	nutritional_info/Sodiu	nutritional_info/Proteine	nutritional_info/Grasimi saturate	Ingrediente	Alergeni]
 test = []
 
 test = getDictBySubcategory(data_dictionary) 
