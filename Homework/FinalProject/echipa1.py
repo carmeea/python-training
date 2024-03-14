@@ -1,16 +1,17 @@
 import csv
 import pandas as pd
 
-#create a dictionary with the subcategories as keys and the values are lists of dictionaries
+#create an empty dictionary
 subcategoryDict = {}
-#create a base category to search for
+
+#create a base category to search for in order to identify the subcategories
 base_category = "Dulciuri-si-snacks"
 
 #open the file and read the data
 with open("data.csv", "r") as datafile:
     reader=csv.DictReader(datafile)
 
-#iterate through the data and create a dictionary with the subcategories as keys and the values are lists of dictionaries
+#iterate through the file and create a dictionary with the subcategories as keys and the values are lists containing the data
     for data in reader:
         #split the link to get the subcategory
         split_link = data["link"].split("/")
