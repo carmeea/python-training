@@ -12,13 +12,11 @@ Implementation:
 6. Calling the 'sum' function with a tuple of numbers (8, 2, 3, 0, 7)
 """
 
-
 def sum(numbers):
     total = 0
     for x in numbers:
         total += x
     print(total)
-
 
 sum((9, 2, 3, 0, 8))
 
@@ -37,7 +35,6 @@ Implementation:
 7. Print the result of calling the 'unique_list' function with a list containing duplicate elements
 """
 
-
 def unique_list(l):
     x = []
     for a in l:
@@ -45,8 +42,7 @@ def unique_list(l):
             x.append(a)
     return x
 
-
-print(unique_list([1, 2, 3, 3, 3, 3, 4, 5]))
+#print(unique_list([1, 2, 3, 3, 3, 3, 4, 5]))
 
 
 """
@@ -64,7 +60,6 @@ Implementation:
 8. Print the result of calling the 'string_reverse' function with the input string '1234abcd'
 """
 
-
 def string_reverse(string_1):
     rstr1 = ""
     index = len(string_1)
@@ -74,8 +69,7 @@ def string_reverse(string_1):
         index = index - 1
     return rstr1
 
-
-print(string_reverse("1234abcd"))
+#print(string_reverse("1234abcd"))
 
 
 """
@@ -90,15 +84,13 @@ Implementation:
 5. Call the 'test_range' function with the argument 5
 """
 
-
 def test_range(n):
     if n in range(3, 9):
         print("%s is in the range" % str(n))
     else:
         print("The number is outside the given range.")
 
-
-test_range(5)
+#test_range(5)
 
 
 """
@@ -120,7 +112,6 @@ Implementation:
 10. Call the 'string_test' function with the input string 'The quick Brown Fox'
 """
 
-
 def string_test(s):
     d = {"UPPER_CASE": 0, "LOWER_CASE": 0}
     for c in s:
@@ -135,5 +126,116 @@ def string_test(s):
     print("No. of Upper case characters: ", d["UPPER_CASE"])
     print("No. of Lower case Characters: ", d["LOWER_CASE"])
 
+#string_test("The quick Brown Fox")
 
-string_test("The quick Brown Fox")
+
+'''
+Return the square root of a number.
+'''
+
+import math
+
+def square_root(num):
+    x = math.sqrt(64)
+    print(x)
+
+#square_root(64)
+
+
+'''
+Return the name of the operating system and create a new directory.
+'''
+
+import os
+
+def os_module():
+    print(os.name)
+    os.mkdir("test")
+
+#os_module()
+
+
+'''
+Write a Python program to get the current time.
+'''
+
+import datetime
+
+#print(datetime.datetime.now().time())
+
+
+'''
+Write a Python program to subtract five days from the current date.
+'''
+
+from datetime import date, timedelta
+
+dt = date.today() - timedelta(5)
+#print('Current Date :',date.today())
+#print('5 days before Current Date :',dt)
+
+
+'''
+Write a Python program to generate a float between 0 and 1, inclusive and generate a random float within a specific range.
+'''
+
+import random 
+
+def random_number():
+    print("Generate a float between 0 and 1, inclusive:")
+    print(random.uniform(0, 1))
+    print("\nGenerate a random float within a range:")
+    random_float = random.uniform(1.0, 3.0)
+    print(random_float)
+
+#random_number()
+
+
+'''
+Write a Python program to shuffle the elements of a given list.
+'''
+
+import random 
+
+def random_shuffle():
+    nums = [1, 2, 3, 4, 5]
+    print("Original list:")
+    print(nums)
+    random.shuffle(nums)
+    print("Shuffle list:")
+    print(nums)
+    words = ['red', 'black', 'green', 'blue']
+    print("\nOriginal list:")
+    print(words)
+    random.shuffle(words)
+    print("Shuffle list:")
+    print(words)
+
+#random_shuffle()
+
+
+'''
+Write a Python program to generate a random color hex, a random alphabetical string, 
+random value between two integers (inclusive) and a random multiple of 7 between 0 and 70.
+'''
+    
+import random
+import string
+
+def random_values():
+    print("Generate a random color hex:")
+    print("#{:06x}".format(random.randint(0, 0xFFFFFF)))
+    print("\nGenerate a random alphabetical string:")
+    max_length = 255
+    s = ""
+    for i in range(random.randint(1, max_length)):
+        s += random.choice(string.ascii_letters)
+    print(s)
+    print("Generate a random value between two integers, inclusive:")
+    print(random.randint(0, 10))
+    print(random.randint(-7, 7))
+    print(random.randint(1, 1))
+    print("Generate a random multiple of 7 between 0 and 70:")
+    print(random.randint(0, 10) * 7)
+
+#random_values()
